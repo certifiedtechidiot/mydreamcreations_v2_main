@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Creation Events | Extraordinary Events, Lasting Memories</title>
+  <meta name="description" content="From intimate celebrations to grand experiences, we bring your vision to life with creativity, precision and passion. Luxury event planning and design in Goa.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ===================================================
+       FLOATING HEADER & NAVIGATION
+       =================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#" class="brand-block">
+        <span class="brand-name">Dream Creation</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#events">Our Events</a></li>
+        <li><a href="#creations">Creations</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#testimonials">Kind Words</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div>
+        <button onclick="openConsultModal()" class="btn-pill btn-pill-olive" style="padding: 10px 22px; font-size: 0.78rem;">
+          Get in Touch
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================
+       HERO SECTION (TIMED PHOTO CROSSFADE & SLIDESHOW)
+       =================================================== -->
+  <section id="home" class="hero-v2">
+    <!-- Background Slideshow -->
+    <div class="hero-slideshow" id="heroSlideshow">
+      <div class="hero-slide active" style="background-image: url('assets/hero_pin.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1920&q=85');"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1920&q=85');"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=1920&q=85');"></div>
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-container">
+      <div class="hero-content reveal-on-scroll">
+        <span class="hero-top-tag">Events That Stay</span>
+        <h1>Extraordinary Events, Lasting Memories</h1>
+        <p>From intimate celebrations to grand experiences, we bring your vision to life with creativity, precision and passion.</p>
+        
+        <div class="hero-btn-group">
+          <button onclick="openConsultModal()" class="btn-pill btn-pill-olive">
+            Plan Your Event &rarr;
+          </button>
+          <button onclick="openVideoStoryModal()" class="btn-pill btn-pill-outline">
+            <i data-lucide="play-circle" style="width: 16px; height: 16px;"></i> Watch Our Story
+          </button>
+        </div>
+      </div>
+
+      <!-- Top Right Handwritten Script Accent -->
+      <div class="hero-script-badge reveal-on-scroll" style="--delay: 0.3s;">
+        <span class="hero-script-text">More Than Events</span>
+        <div class="hero-script-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 2: FOUR CAPABILITY PILLARS (RIBBON)
+       =================================================== -->
+  <section class="pillars-ribbon">
+    <div class="container">
+      <div class="pillars-grid">
+        <!-- 1. Personalized Planning -->
+        <div class="pillar-col reveal-on-scroll" style="--delay: 0.1s;">
+          <div class="pillar-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <rect width="18" height="18" x="3" y="3" rx="2"/>
+              <path d="M7 7h10M7 12h10M7 17h6"/>
+            </svg>
+          </div>
+          <h3>Personalized Planning</h3>
+          <p>Tailored to your vision</p>
+        </div>
+
+        <!-- 2. Experienced Team -->
+        <div class="pillar-col reveal-on-scroll" style="--delay: 0.2s;">
+          <div class="pillar-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Experienced Team</h3>
+          <p>Creative & reliable experts</p>
+        </div>
+
+        <!-- 3. Seamless Execution -->
+        <div class="pillar-col reveal-on-scroll" style="--delay: 0.3s;">
+          <div class="pillar-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+          </div>
+          <h3>Seamless Execution</h3>
+          <p>Stress-free experience</p>
+        </div>
+
+        <!-- 4. Unforgettable Moments -->
+        <div class="pillar-col reveal-on-scroll" style="--delay: 0.4s;">
+          <div class="pillar-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </div>
+          <h3>Unforgettable Moments</h3>
+          <p>Memories for a lifetime</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 3: "OUR EVENTS" CATEGORY GRID
+       =================================================== -->
+  <section id="events" class="events-section">
+    <div class="container">
+      <div class="section-header-row reveal-on-scroll">
+        <div>
+          <span class="section-tag">Our Events</span>
+          <h2 class="serif-heading">Every Occasion Deserves <br>Something Extraordinary</h2>
+        </div>
+        <div>
+          <a href="#creations" class="header-link-arrow">Explore All Events &rarr;</a>
+        </div>
+      </div>
+
+      <div class="events-grid">
+        <!-- 1. Weddings -->
+        <div class="event-card reveal-on-scroll" style="--delay: 0.1s;">
+          <div class="event-img-wrap">
+            <img src="assets/event_weddings_pin.jpg" alt="Weddings by Dream Creation">
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-info">
+              <h3>Weddings</h3>
+              <p>Beautiful beginnings</p>
+            </div>
+            <a href="javascript:void(0)" onclick="openConsultModalWithTopic('Weddings')" class="circle-arrow-btn" aria-label="Explore Weddings">
+              <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Corporate Events -->
+        <div class="event-card reveal-on-scroll" style="--delay: 0.2s;">
+          <div class="event-img-wrap">
+            <img src="assets/event_corporate_pin.jpg" alt="Corporate Events by Dream Creation">
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-info">
+              <h3>Corporate Events</h3>
+              <p>Ideas that inspire</p>
+            </div>
+            <a href="javascript:void(0)" onclick="openConsultModalWithTopic('Corporate Events')" class="circle-arrow-btn" aria-label="Explore Corporate Events">
+              <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Social Celebrations -->
+        <div class="event-card reveal-on-scroll" style="--delay: 0.3s;">
+          <div class="event-img-wrap">
+            <img src="assets/event_social_pin.jpg" alt="Social Celebrations by Dream Creation">
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-info">
+              <h3>Social Celebrations</h3>
+              <p>Moments that matter</p>
+            </div>
+            <a href="javascript:void(0)" onclick="openConsultModalWithTopic('Social Celebrations')" class="circle-arrow-btn" aria-label="Explore Social Celebrations">
+              <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Personal Events -->
+        <div class="event-card reveal-on-scroll" style="--delay: 0.4s;">
+          <div class="event-img-wrap">
+            <img src="assets/event_personal_pin.jpg" alt="Personal Events by Dream Creation">
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-info">
+              <h3>Personal Events</h3>
+              <p>Your story, our touch</p>
+            </div>
+            <a href="javascript:void(0)" onclick="openConsultModalWithTopic('Personal Events')" class="circle-arrow-btn" aria-label="Explore Personal Events">
+              <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 4: "OUR LATEST CREATIONS" (ASYMMETRICAL GALLERY)
+       =================================================== -->
+  <section id="creations" class="creations-section">
+    <div class="container creations-layout">
+      <div class="creations-left reveal-on-scroll">
+        <span class="section-tag">Spaces Transformed Into Stories</span>
+        <h2 class="serif-heading">Our Latest Creations</h2>
+        <p>A glimpse into the experiences we've created for our clients. Each event is a unique story, brought to life with detail and heart.</p>
+        <button onclick="openConsultModal()" class="btn-pill btn-pill-olive">
+          View Full Gallery &rarr;
+        </button>
+      </div>
+
+      <div class="creations-mosaic-wrapper reveal-on-scroll" style="--delay: 0.25s;">
+        <div class="creations-mosaic-grid">
+          <!-- Left Big Card -->
+          <div class="mosaic-main-card">
+            <img id="mosaicBigImg" src="assets/creation_centerpiece_pin.jpg" alt="Floral Centerpiece Creation">
+          </div>
+
+          <!-- Right Stack of 2 Cards -->
+          <div class="mosaic-stack">
+            <div class="mosaic-sub-card">
+              <img id="mosaicSub1" src="assets/creation_pavilion_pin.jpg" alt="Outdoor Illuminated Pavilion">
+            </div>
+            <div class="mosaic-sub-card">
+              <img id="mosaicSub2" src="assets/creation_neon_pin.jpg" alt="Better Together Stage Decor">
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Navigation Arrow -->
+        <button class="mosaic-floating-nav" onclick="rotateCreationsGallery()" aria-label="Next Creations">
+          <i data-lucide="chevron-right" style="width: 20px; height: 20px;"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 5: "HOW WE WORK" - 4-STEP PROCESS TIMELINE
+       =================================================== -->
+  <section id="process" class="process-section">
+    <div class="container">
+      <div class="section-header-row reveal-on-scroll">
+        <div>
+          <span class="section-tag">How We Work</span>
+          <h2 class="serif-heading">A Simple Process <br>for Seamless Events</h2>
+        </div>
+        <div style="max-width: 440px;">
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--color-text-body); margin-bottom: 8px;">
+            From idea to execution, we make event planning effortless so you can focus on what truly matters.
+          </p>
+          <a href="javascript:void(0)" onclick="openConsultModal()" class="header-link-arrow">Learn More &rarr;</a>
+        </div>
+      </div>
+
+      <div class="process-timeline">
+        <!-- Step 01 -->
+        <div class="process-step reveal-on-scroll" style="--delay: 0.1s;">
+          <div class="step-icon-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <div class="step-title-row">
+            <span class="step-num">01</span>
+            <span class="step-name">Consult</span>
+          </div>
+          <p>Share your vision and requirements</p>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="process-step reveal-on-scroll" style="--delay: 0.2s;">
+          <div class="step-icon-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+              <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+              <line x1="16" x2="16" y1="2" y2="6"/>
+              <line x1="8" x2="8" y1="2" y2="6"/>
+              <line x1="3" x2="21" y1="10" y2="10"/>
+            </svg>
+          </div>
+          <div class="step-title-row">
+            <span class="step-num">02</span>
+            <span class="step-name">Plan</span>
+          </div>
+          <p>We create a customized plan and design</p>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="process-step reveal-on-scroll" style="--delay: 0.3s;">
+          <div class="step-icon-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+              <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/>
+              <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+              <path d="M12 2v2M12 20v2M20 12h2M2 12h2"/>
+            </svg>
+          </div>
+          <div class="step-title-row">
+            <span class="step-num">03</span>
+            <span class="step-name">Execute</span>
+          </div>
+          <p>Our team brings everything to life</p>
+        </div>
+
+        <!-- Step 04 -->
+        <div class="process-step reveal-on-scroll" style="--delay: 0.4s;">
+          <div class="step-icon-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+              <path d="M8 22h8M12 15v7M10 2l-2 9a4 4 0 0 0 4 4 4 4 0 0 0 4-4l-2-9Z"/>
+              <path d="M18 6l2 5a3 3 0 0 1-3 3"/>
+            </svg>
+          </div>
+          <div class="step-title-row">
+            <span class="step-num">04</span>
+            <span class="step-name">Celebrate</span>
+          </div>
+          <p>You enjoy, we handle the rest</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 6: "WHAT OUR CLIENTS SAY" (TESTIMONIALS)
+       =================================================== -->
+  <section id="testimonials" class="testimonials-v2">
+    <div class="container testimonials-v2-grid">
+      <div class="testimonials-v2-left reveal-on-scroll">
+        <span class="section-tag">Kind Words</span>
+        <h2 class="serif-heading">What Our <br>Clients Say</h2>
+        
+        <div class="testimonial-arrows">
+          <button class="t-arrow-btn" onclick="prevClientTestimonial()" aria-label="Previous Testimonial">
+            <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+          </button>
+          <button class="t-arrow-btn" onclick="nextClientTestimonial()" aria-label="Next Testimonial">
+            <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="testimonial-card-v2 reveal-on-scroll" style="--delay: 0.2s;">
+        <div class="quote-icon-v2">“</div>
+        <p id="clientQuoteText">
+          "Dream Creation made our wedding an absolute dream! Every detail was taken care of, and the team went above and beyond. Truly a memorable experience!"
+        </p>
+
+        <div class="testimonial-client-row">
+          <img id="clientAvatarImg" src="assets/client_avatar_pin.jpg" alt="Aarushi Mehta" class="client-avatar-img">
+          <div>
+            <div class="client-name" id="clientNameText">Aarushi Mehta</div>
+            <div class="client-role" id="clientRoleText">Bride</div>
+          </div>
+        </div>
+
+        <div class="t-dots">
+          <span class="t-dot active" onclick="setClientTestimonial(0)"></span>
+          <span class="t-dot" onclick="setClientTestimonial(1)"></span>
+          <span class="t-dot" onclick="setClientTestimonial(2)"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 7: "READY TO PLAN YOUR EVENT?" (CTA BANNER)
+       =================================================== -->
+  <section id="contact" class="cta-banner-v2">
+    <div class="cta-overlay-v2"></div>
+    <div class="container cta-content-v2 reveal-on-scroll">
+      <div class="cta-text-side">
+        <span class="section-tag" style="color: rgba(255, 255, 255, 0.8);">Let's Create Something Amazing</span>
+        <h2>Ready to Plan Your Event?</h2>
+        <p>Get in touch with our team and let's turn your ideas into an unforgettable experience.</p>
+      </div>
+
+      <div>
+        <button onclick="openConsultModal()" class="btn-pill btn-pill-olive" style="background-color: #435A4B; padding: 16px 32px; font-size: 0.88rem;">
+          Get a Free Consultation &rarr;
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       FOOTER
+       =================================================== -->
+  <footer class="site-footer-v2">
+    <div class="container">
+      <div class="footer-v2-grid">
+        <div>
+          <span class="brand-name" style="font-size: 1.4rem;">Dream Creation</span>
+          <p style="font-size: 0.85rem; line-height: 1.8; color: #8F9991; margin: 16px 0 20px; max-width: 280px;">
+            Extraordinary events, lasting memories. Full-scale wedding planning, spatial design, and celebration management in Goa.
+          </p>
+          <div style="display: flex; gap: 14px;">
+            <a href="https://www.instagram.com/dream_creation_event_/" target="_blank" style="color: #FFFFFF;">
+              <i data-lucide="instagram" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="https://wa.me/918788149303" target="_blank" style="color: #FFFFFF;">
+              <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-v2-col">
+          <h4>Events</h4>
+          <ul>
+            <li><a href="#events">Weddings & Nikah</a></li>
+            <li><a href="#events">Corporate Galas</a></li>
+            <li><a href="#events">Social Celebrations</a></li>
+            <li><a href="#events">Personal Events</a></li>
+            <li><a href="#creations">Stage Scenography</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-v2-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Our Events</a></li>
+            <li><a href="#creations">Latest Creations</a></li>
+            <li><a href="#process">How We Work</a></li>
+            <li><a href="#testimonials">Kind Words</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-v2-col">
+          <h4>Contact & Location</h4>
+          <ul>
+            <li>Direct Phone: +91 8788149303</li>
+            <li>Email: dreamcreationeventsforyou@gmail.com</li>
+            <li>Director: @zaan_05__</li>
+            <li>Bicholim, Goa - 403504, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-v2-bottom">
+        <div>© 2026 Dream Creation Events. All rights reserved.</div>
+        <div>Extraordinary Experiences • Goa, India</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       CONSULTATION MODAL (DIRECT WHATSAPP)
+       =================================================== -->
+  <div class="consult-modal" id="consultModal" onclick="handleConsultBackdrop(event)">
+    <div class="consult-modal-card">
+      <button class="modal-close-btn" onclick="closeConsultModal()">
+        <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+      </button>
+
+      <h3>Let's Plan Your Event</h3>
+      <p style="font-size: 0.88rem; color: var(--color-text-body); margin-bottom: 22px;">
+        Tell us about your upcoming occasion and Director Zaan will connect with you directly.
+      </p>
+
+      <form onsubmit="handleConsultSubmit(event)">
+        <div class="form-field">
+          <label for="cName">Your Name</label>
+          <input type="text" id="cName" class="form-input" placeholder="e.g. Aarushi Mehta" required>
+        </div>
+
+        <div class="form-field">
+          <label for="cTopic">Occasion Type</label>
+          <select id="cTopic" class="form-input" required>
+            <option value="Weddings">Weddings</option>
+            <option value="Corporate Events">Corporate Events</option>
+            <option value="Social Celebrations">Social Celebrations</option>
+            <option value="Personal Events">Personal Events</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="cDetails">Estimated Date & Location</label>
+          <input type="text" id="cDetails" class="form-input" placeholder="e.g. November 2026, North Goa" required>
+        </div>
+
+        <div class="form-field">
+          <label for="cMessage">Vision / Notes</label>
+          <textarea id="cMessage" class="form-input" rows="3" placeholder="Tell us about the atmosphere, guest size, or decor ideas..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-pill btn-pill-olive" style="width: 100%; padding: 14px; margin-top: 8px;">
+          Send Consultation Request on WhatsApp &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
