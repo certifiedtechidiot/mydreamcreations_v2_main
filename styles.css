@@ -1312,16 +1312,32 @@ a {
     font-size: 0.76rem;
   }
 
+  /* Section Header Rows on Mobile (Our Events & How We Work) */
+  .section-header-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+    margin-bottom: 28px !important;
+  }
+  .section-header-row > div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .section-header-row .serif-heading {
+    font-size: clamp(1.75rem, 5.5vw, 2.05rem) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.01em;
+  }
+  .section-header-row .header-link-arrow {
+    display: inline-flex !important;
+    margin-top: 4px;
+    font-size: 0.85rem !important;
+  }
+
   /* Occasions & Services Cards */
   .events-section {
-    padding: 55px 0;
-  }
-  .events-header {
-    margin-bottom: 32px;
-  }
-  .events-header h2 {
-    font-size: 2rem;
-    line-height: 1.15;
+    padding: 50px 0;
   }
   .events-grid {
     grid-template-columns: 1fr !important;
@@ -1365,11 +1381,7 @@ a {
 
   /* Process Steps */
   .process-section {
-    padding: 55px 0;
-  }
-  .process-header h2 {
-    font-size: 2rem;
-    line-height: 1.15;
+    padding: 50px 0;
   }
   .process-timeline {
     grid-template-columns: 1fr !important;
