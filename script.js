@@ -34,11 +34,21 @@ function initScrollAnimations() {
       }
     });
   }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -40px 0px'
+    threshold: 0.05,
+    rootMargin: '40px 0px 40px 0px'
   });
 
   elements.forEach(el => observer.observe(el));
+
+  // Safety fallback: reveal any near-viewport items after load even if scroll event didn't trigger
+  setTimeout(() => {
+    elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight + 250) {
+        el.classList.add('in-view');
+      }
+    });
+  }, 600);
 }
 
 // ===================================================
@@ -266,3 +276,27 @@ function openVideoStoryModal() {
   const text = `Hi Zaan! 🎥 I was on your website and would love to watch your latest event story reels and video portfolios in Goa.`;
   window.open(`https://wa.me/918788149303?text=${encodeURIComponent(text)}`, '_blank');
 }
+
+// ===================================================
+// 7. MOBILE MENU DRAWER
+// ===================================================
+function toggleMobileMenu() {
+  const drawer = document.getElementById('mobileMenuDrawer');
+  const btn = document.getElementById('mobileToggleBtn');
+  if (drawer && btn) {
+    const isOpen = drawer.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+}
+
+function closeMobileMenu() {
+  const drawer = document.getElementById('mobileMenuDrawer');
+  const btn = document.getElementById('mobileToggleBtn');
+  if (drawer && btn) {
+    drawer.classList.remove('open');
+    btn.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+

@@ -28,13 +28,41 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <div>
-        <button onclick="openConsultModal()" class="btn-pill btn-pill-olive" style="padding: 10px 22px; font-size: 0.78rem;">
+      <div class="nav-actions">
+        <button onclick="openConsultModal()" class="btn-pill btn-pill-olive nav-cta-btn">
           Get in Touch
         </button>
-      </div>
+        <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle navigation menu" onclick="toggleMobileMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
     </div>
   </header>
+
+  <!-- Mobile Menu Drawer (Fixed to Viewport) -->
+  <div class="mobile-menu-drawer" id="mobileMenuDrawer">
+    <div class="mobile-drawer-top">
+      <span class="brand-name" style="color: var(--color-text-dark); font-size: 1.15rem;">Dream Creation</span>
+      <button class="mobile-drawer-close" onclick="closeMobileMenu()" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="#events" onclick="closeMobileMenu()">Our Events</a></li>
+      <li><a href="#creations" onclick="closeMobileMenu()">Creations</a></li>
+      <li><a href="#process" onclick="closeMobileMenu()">Process</a></li>
+      <li><a href="#testimonials" onclick="closeMobileMenu()">Kind Words</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <button onclick="closeMobileMenu(); openConsultModal();" class="btn-pill btn-pill-olive" style="width: 100%; padding: 14px; margin-bottom: 14px;">
+        Book Free Consultation &rarr;
+      </button>
+      <a href="https://wa.me/918788149303" target="_blank" class="mobile-drawer-contact-link">
+        <i data-lucide="message-circle" style="width: 16px; height: 16px;"></i> WhatsApp Director Zaan (+91 8788149303)
+      </a>
+    </div>
+  </div>
 
   <!-- ===================================================
        HERO SECTION (TIMED PHOTO CROSSFADE & SLIDESHOW)
@@ -52,7 +80,10 @@
 
     <div class="container hero-container">
       <div class="hero-content hero-animate">
-        <span class="hero-top-tag">Events That Stay</span>
+        <div class="hero-tag-wrap">
+          <span class="hero-top-tag">Events That Stay</span>
+          <span class="hero-mobile-script">More Than Events</span>
+        </div>
         <h1>Extraordinary Events, Lasting Memories</h1>
         <p>From intimate celebrations to grand experiences, we bring your vision to life with creativity, precision and passion.</p>
         
